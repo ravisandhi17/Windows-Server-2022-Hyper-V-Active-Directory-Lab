@@ -1,6 +1,6 @@
-Windows Server 2022 Hyper-V + Active Directory Lab
+## Windows Server 2022 Hyper-V + Active Directory Lab##
 
-Project Overview
+## Project Overview
 
 This project demonstrates a fully functional enterprise-style virtualized infrastructure built using Windows Server 2022 running on a Dell PowerEdge R720 server with 
 
@@ -8,17 +8,17 @@ Hyper-V role enabled. The environment includes domain services, DNS, virtual mac
 
 The lab simulates a real-world IT enterprise setup used for:
 
-Active Directory administration
+- Active Directory administration
 
-Domain controller configuration
+- Domain controller configuration
 
-Hyper-V virtualization management
+- Hyper-V virtualization management
 
-Network and DNS services
+- Network and DNS services
 
-Client-server domain authentication
+- Client-server domain authentication
 
-Lab Architecture
+## Lab Architecture
 
 Dell PowerEdge R720 (Physical Host)
 │
@@ -34,186 +34,186 @@ Dell PowerEdge R720 (Physical Host)
 │        ├── Network via External Switch
 │        └── AD Authentication Enabled
 
-⚙️ Technologies Used
+## Technologies Used
 
-Windows Server 2022
+- Windows Server 2022
 
-Active Directory Domain Services (AD DS)
+- Active Directory Domain Services (AD DS)
 
-DNS Server Role
+- DNS Server Role
 
-Hyper-V Virtualization
+- Hyper-V Virtualization
 
-Windows 11 Virtual Machine
+- Windows 11 Virtual Machine
 
-PowerShell Administration
+- PowerShell Administration
 
-Virtual Networking (External Switch)
+- Virtual Networking (External Switch)
 
-Key Features Implemented
+## Key Features Implemented
 
-Active Directory Domain Controller setup
+- Active Directory Domain Controller setup
 
-DNS integrated with AD
+- DNS integrated with AD
 
-Hyper-V virtualization environment
+- Hyper-V virtualization environment
 
-External virtual switch networking
+- External virtual switch networking
 
-Windows 11 VM deployment
+- Windows 11 VM deployment
 
-Domain join and authentication
+- Domain join and authentication
 
-VM resource allocation monitoring
+- VM resource allocation monitoring
 
-Network configuration with static IP
+- Network configuration with static IP
 
-System monitoring and event logs
+- System monitoring and event logs
 
 Patch management (Windows Updates)
 
 VM checkpoints (backup capability)
 
-Screenshots & Commands
+## Screenshots & Commands
 
-1. Hyper-V Virtual Machines
+## 1. Hyper-V Virtual Machines
 
 Get-VM
 
-2. VM Processor Virtualization
+## 2. VM Processor Virtualization
 
 Get-VMProcessor -VMName "NestedHostVM" | fl ExposeVirtualizationExtensions
 
-3. Network Configuration
+## 3. Network Configuration
 
 Get-NetIPConfiguration
 
-4. Active Directory Role
+## 4. Active Directory Role
 
 
 Get-WindowsFeature AD-Domain-Services
 
-5. Domain Verification
+## 5. Domain Verification
 
 Get-ADDomain
 
-6. Virtual Switches
+## 6. Virtual Switches
 
 Get-VMSwitch
 
-7. VM Network Adapter
+## 7. VM Network Adapter
 
 Get-VMNetworkAdapter -VMName "NestedHostVM"
 
-8. VM Performance
+## 8. VM Performance
 
 Get-VM | Select Name, State, CPUUsage, MemoryAssigned, Uptime
 
-9. Host System Info
+## 9. Host System Info
 
 Get-ComputerInfo | select WindowsProductName, WindowsVersion, CsName, CsDomain
 
-10. DNS Validation
+## 10. DNS Validation
 
 nslookup ravikumar.local
 
-11. Group Policy Check
+## 11. Group Policy Check
 
 gpresult /r
 
-12. IP Configuration (Client)
+## 12. IP Configuration (Client)
 
 ipconfig /all
 
-13. AD Domain Join (Client)
+## 13. AD Domain Join (Client)
 
 systeminfo | findstr /B /C:"Domain"
 
-14. Authentication Check
+## 14. Authentication Check
 
 whoami
 
-15. System Event Logs
+## 15. System Event Logs
 
 Get-WinEvent -LogName System -MaxEvents 20
 
-16. Installed Roles
+## 16. Installed Roles
 
 Get-WindowsFeature | Where Installed
 
-17. Windows Updates
+## 17. Windows Updates
 
 Get-HotFix
 
-18. VM Checkpoints
+## 18. VM Checkpoints
 
 Get-VMSnapshot -VMName "NestedHostVM"
 
-Skills Demonstrated
+## Skills Demonstrated
 
-Windows Server Administration
+- Windows Server Administration
 
-Active Directory Management
+- Active Directory Management
 
-DNS Configuration
+- DNS Configuration
 
-Hyper-V Virtualization
+- Hyper-V Virtualization
 
-Virtual Machine Deployment
+- Virtual Machine Deployment
 
-Network Configuration (Static IP / External Switch)
+- Network Configuration (Static IP / External Switch)
 
-Domain Joining & Authentication
+- Domain Joining & Authentication
 
-System Monitoring & Troubleshooting
+- System Monitoring & Troubleshooting
 
-PowerShell Automation
+- PowerShell Automation
 
-Infrastructure Design
+## Infrastructure Design
 
-Project Outcome
+## Project Outcome
 
 This lab demonstrates a complete enterprise-style IT infrastructure environment, simulating real-world scenarios used in corporate networks. It is suitable for showcasing 
 
 skills for:
 
-IT Helpdesk Technician roles
+- IT Helpdesk Technician roles
 
-Junior System Administrator roles
+- Junior System Administrator roles
 
-Desktop Support Engineer roles
+- Desktop Support Engineer roles
 
-Infrastructure / Virtualization support roles
+- Infrastructure / Virtualization support roles
 
-Notes
+## Notes
 
-VM networking uses External Virtual Switch
+- VM networking uses External Virtual Switch
 
-Domain: ravikumar.local
+- Domain: ravikumar.local
 
-Domain Controller: DC1
+- Domain Controller: DC1
 
-Hyper-V enabled on physical server host
+- Hyper-V enabled on physical server host
 
-Windows 11 VM is domain joined client
+- Windows 11 VM is domain joined client
 
-Future Improvements
+## Future Improvements
 
-Add multiple domain-joined clients
+- Add multiple domain-joined clients
 
-Implement DHCP server role
+- Implement DHCP server role
 
-Configure Group Policy Objects (GPO) in depth
-
-
-Add file server role (SMB shares)
+- Configure Group Policy Objects (GPO) in depth
 
 
-Implement backup automation
+- Add file server role (SMB shares)
 
-Create nested virtualization lab (Hyper-V inside VM)
 
-Authotr
+- Implement backup automation
+
+- Create nested virtualization lab (Hyper-V inside VM)
+
+## Authotr
 
 Ravi Kumar
 
