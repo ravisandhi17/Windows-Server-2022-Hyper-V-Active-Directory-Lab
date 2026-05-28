@@ -70,7 +70,7 @@ Get-VMProcessor -VMName "NestedHostVM" | fl ExposeVirtualizationExtensions
 
 
 
-## 4. Active Directory Role
+## 3. Active Directory Role
 
 ## Organizational Units (OUs)
 - IT_DELL
@@ -113,44 +113,29 @@ Get-VMProcessor -VMName "NestedHostVM" | fl ExposeVirtualizationExtensions
 
 
 
-## 5. Domain Verification
+## 4. Domain Verification
 
 
 
 ![IPCONFIG](screenshots/ip-config/IPCONFIG-HYPER-V-PC.png)
 
-## 6. Virtual Switches
+## 5. Virtual Switches
 
 Get-VMSwitch
 
 ![IPCONFIG](screenshots/hyper-v/VM-SWITCH.png)
 
-## 7. VM Network Adapter
+## 6. VM Network Adapter
 
 Get-VMNetworkAdapter -VMName "NestedHostVM"
 
 ![IPCONFIG](screenshots/hyper-v/NETWORK-ADAPTER-BINDING.png)
 
 
-## 9. Host System Info
 
-Get-ComputerInfo | select WindowsProductName, WindowsVersion, CsName, CsDomain
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
 
-## 10. DNS Validation
-
-nslookup ravikumar.local
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
-
-## 11. Group Policy Check
-
-gpresult /r
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
-
-## 12. IP Configuration (Client)
+## 7. IP Configuration (Client)
 
 ipconfig /all
 
