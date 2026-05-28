@@ -142,7 +142,7 @@ ipconfig /all
 
 
 ## 8. Host info
-systeninfo
+systeminfo
 
 ![IPCONFIG](screenshots/hyper-v/SYSTEM-INFO1.png)
 
