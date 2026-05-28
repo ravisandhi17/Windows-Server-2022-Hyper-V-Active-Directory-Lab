@@ -72,17 +72,44 @@ Get-VMProcessor -VMName "NestedHostVM" | fl ExposeVirtualizationExtensions
 
 ## 4. Active Directory Role
 
+## Organizational Units (OUs)
+- IT_DELL
+- HR_DELL
+- SALES_DELL
 
-Get-WindowsFeature AD-Domain-Services
+## Users Created
+- ITDELLUSER1 → IT_DELL
+- HRDELLUSER1 → HR_DELL
+- SALESDELLUSER1 → SALES_DELL
 
-![IPCONFIG](screenshots/active-directory/LOGGEDIN-AS-SALESDELLUSER1.png)
+---
 
+##  Group Policy Configuration
 
-![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-HRDELLUSER1.png)
+##  IT Department (Full Access)
+- Control Panel: Enabled
+- Command Prompt: Enabled
+- Full administrative-style access
 
 ![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-ITDELLUSER1.png)
 
+##  HR Department (Restricted Access)
+- Control Panel: Disabled
+- Command Prompt: Disabled
+- Highly restricted system access for security compliance
+
+![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-HRDELLUSER1.png)
+
+##  SALES Department (Standard Access)
+- Control Panel: Disabled
+- Command Prompt: Enabled
+- Balanced user environment for business operations
+
+
+![IPCONFIG](screenshots/active-directory/LOGGEDIN-AS-SALESDELLUSER1.png)
+
 ![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-SALESDELLUSER1.png)
+
 
 
 
