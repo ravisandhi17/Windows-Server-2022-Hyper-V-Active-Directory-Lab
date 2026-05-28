@@ -166,33 +166,7 @@ ipconfig /all
 
 - PowerShell Automation
 
-## Infrastructure Design
 
-## Project Outcome
-
-This lab demonstrates a complete enterprise-style IT infrastructure environment, simulating real-world scenarios used in corporate networks. It is suitable for showcasing 
-
-skills for:
-
-- IT Helpdesk Technician roles
-
-- Junior System Administrator roles
-
-- Desktop Support Engineer roles
-
-- Infrastructure / Virtualization support roles
-
-## Notes
-
-- VM networking uses External Virtual Switch
-
-- Domain: ravikumar.local
-
-- Domain Controller: DC1
-
-- Hyper-V enabled on physical server host
-
-- Windows 11 VM is domain joined client
 
 ## Future Improvements
 
