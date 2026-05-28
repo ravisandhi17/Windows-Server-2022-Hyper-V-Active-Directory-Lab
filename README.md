@@ -1,4 +1,4 @@
-## Windows Server 2022 Hyper-V + Active Directory Lab##
+## Windows Server 2022 Hyper-V + Active Directory Lab
 
 ## Project Overview
 
@@ -18,21 +18,6 @@ The lab simulates a real-world IT enterprise setup used for:
 
 - Client-server domain authentication
 
-## Lab Architecture
-
-Dell PowerEdge R720 (Physical Host)
-│
-├── Windows Server 2022 (DC1 / Hyper-V Host)
-│   ├── AD DS (Domain Controller)
-│   ├── DNS Server
-│   ├── Hyper-V Role
-│   │
-│   ├── Virtual Switch (ExternalSwitch)
-│   │
-│   └── Windows 11 VM (NestedHostVM)
-│        ├── Domain Joined Client
-│        ├── Network via External Switch
-│        └── AD Authentication Enabled
 
 ## Technologies Used
 
@@ -64,15 +49,9 @@ Dell PowerEdge R720 (Physical Host)
 
 - Domain join and authentication
 
-- VM resource allocation monitoring
 
 - Network configuration with static IP
 
-- System monitoring and event logs
-
-Patch management (Windows Updates)
-
-VM checkpoints (backup capability)
 
 ## Screenshots & Commands
 
@@ -213,7 +192,7 @@ skills for:
 
 - Create nested virtualization lab (Hyper-V inside VM)
 
-## Authotr
+## Author
 
 Ravi Kumar
 
