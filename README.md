@@ -3,7 +3,6 @@
 ## Project Overview
 
 This project demonstrates a fully functional enterprise-style virtualized infrastructure built using Windows Server 2022 running on a Dell PowerEdge R720 server with 
-
 Hyper-V role enabled. The environment includes domain services, DNS, virtual machines, and client domain integration.
 
 The lab simulates a real-world IT enterprise setup used for:
