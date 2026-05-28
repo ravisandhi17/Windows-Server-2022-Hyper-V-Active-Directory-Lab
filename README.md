@@ -54,6 +54,9 @@ The lab simulates a real-world IT enterprise setup used for:
 
 ## Screenshots & Commands
 
+![IPCONFIG](screenshots/hyper-v/NESTEDHOSTVM-ON-DC1.png)
+
+
 ## 1. Hyper-V Virtual Machines
 
 Get-VM
