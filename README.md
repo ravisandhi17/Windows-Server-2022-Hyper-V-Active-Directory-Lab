@@ -141,8 +141,13 @@ ipconfig /all
 ![IPCONFIG](screenshots/ip-config/IPCONFIG-HYPER-V-PC.png)
 
 
+## 8. Host info
+systeninfo
+
+![IPCONFIG](screenshots/hyper-v/SYSTEM-INFO1.png)
 
 
+![IPCONFIG](screenshots/hyper-v/SYSTEM-INFO2.png)
 
 
 ## Skills Demonstrated
