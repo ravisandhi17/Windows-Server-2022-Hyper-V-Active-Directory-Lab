@@ -115,7 +115,7 @@ Get-VMProcessor -VMName "NestedHostVM" | fl ExposeVirtualizationExtensions
 
 ## 5. Domain Verification
 
-Get-ADDomain
+
 
 ![IPCONFIG](screenshots/ip-config/IPCONFIG-HYPER-V-PC.png)
 
