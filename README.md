@@ -57,50 +57,50 @@ The lab simulates a real-world IT enterprise setup used for:
 ## 1. Hyper-V Virtual Machines
 
 Get-VM
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/hyper-v/VIRTUALISATION-CAPABILITY.png)
 
 ## 2. VM Processor Virtualization
 
 Get-VMProcessor -VMName "NestedHostVM" | fl ExposeVirtualizationExtensions
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/hyper-v/VIRTUALISATION-CAPABILITY.png)
 
-## 3. Network Configuration
 
-Get-NetIPConfiguration
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png) 
 
 ## 4. Active Directory Role
 
 
 Get-WindowsFeature AD-Domain-Services
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/active-directory/LOGGEDIN-AS-SALESDELLUSER1.png)
+
+
+![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-HRDELLUSER1.png)
+
+![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-ITDELLUSER1.png)
+
+![IPCONFIG](screenshots/active-directory/GROUP-POLICY-TESTED-SALESDELLUSER1.png)
+
+
 
 ## 5. Domain Verification
 
 Get-ADDomain
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/ip-config/IPCONFIG-HYPER-V-PC.png)
 
 ## 6. Virtual Switches
 
 Get-VMSwitch
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/hyper-v/VIRTUALISATION-CAPABILITY.png)
 
 ## 7. VM Network Adapter
 
 Get-VMNetworkAdapter -VMName "NestedHostVM"
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/hyper-v/NETWORK-ADAPTER-BINDING.png)
 
-## 8. VM Performance
-
-Get-VM | Select Name, State, CPUUsage, MemoryAssigned, Uptime
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
 
 ## 9. Host System Info
 
@@ -124,43 +124,12 @@ gpresult /r
 
 ipconfig /all
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
+![IPCONFIG](screenshots/ip-config/IPCONFIG-HYPER-V-PC.png)
 
-## 13. AD Domain Join (Client)
 
-systeminfo | findstr /B /C:"Domain"
 
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
 
-## 14. Authentication Check
 
-whoami
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
-
-## 15. System Event Logs
-
-Get-WinEvent -LogName System -MaxEvents 20
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
-
-## 16. Installed Roles
-
-Get-WindowsFeature | Where Installed
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
-
-## 17. Windows Updates
-
-Get-HotFix
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
-
-## 18. VM Checkpoints
-
-Get-VMSnapshot -VMName "NestedHostVM"
-
-![IPCONFIG](screenshots/dhcp/SCOPE_FOR_DHCP.png)
 
 ## Skills Demonstrated
 
