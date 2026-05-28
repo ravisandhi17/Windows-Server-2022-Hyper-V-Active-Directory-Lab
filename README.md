@@ -93,7 +93,7 @@ Get-ADDomain
 
 Get-VMSwitch
 
-![IPCONFIG](screenshots/hyper-v/VIRTUALISATION-CAPABILITY.png)
+![IPCONFIG](screenshots/hyper-v/VM-SWITCH.png)
 
 ## 7. VM Network Adapter
 
